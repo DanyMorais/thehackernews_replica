@@ -3,7 +3,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <Container maxWidth='xl' sx={{ bgcolor: '#cfe8fc' }}>
+        <Container maxWidth='xl' sx={{ bgcolor: '#cfe8fc', paddingLeft:'115px', paddingRight:'115px' }}>
             <Typography>Connect with us!</Typography>
             <Box></Box>
             <Box>

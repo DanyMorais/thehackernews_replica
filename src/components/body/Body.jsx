@@ -1,9 +1,15 @@
 import React from 'react'
-import { Box } from '@mui/material'
+import { Box, Container } from '@mui/material'
 
 function Body() {
     return (
-        <Box />
+        <Container sx={{ paddingLeft:'115px', paddingRight:'115px'}}>
+            <Box>Section</Box>
+            <Box>Aside</Box>
+            <Box>Section</Box>
+            <Box>Section</Box>
+            <Box>Section</Box>
+        </Container>
     )
 }
 

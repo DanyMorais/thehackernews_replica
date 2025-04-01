@@ -9,24 +9,38 @@ import { blue } from '@mui/material/colors';
 
 export default function Header() {
   return (
-    <Container maxWidth='xl' sx={{bgcolor:'blue'}}>
+    <Container maxWidth='xl' sx={{bgcolor:'#3732b3', maxHeight:'106px'}}>
         <Box sx={{ 
             display: 'flex',
-            flexDirection: 'row'
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            paddingLeft:'115px',
+            paddingRight:'115px'
         }}> 
-            <TextField id="standard-basic" label="Standard" variant="standard" />
-            <Typography>Followed by 5.20+ million</Typography>
-            <IconButton><TwitterIcon /></IconButton>
-            <IconButton><LinkedInIcon /></IconButton>
-            <IconButton><FacebookIcon /></IconButton>
+            <Typography variant='h6'>Trendings</Typography> 
+            <Box sx={{ 
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+            }}>
+                <Typography>Followed by 5.20+ million</Typography>
+                    <Box>
+                    <IconButton><TwitterIcon /></IconButton>
+                    <IconButton><LinkedInIcon /></IconButton>
+                    <IconButton><FacebookIcon /></IconButton>
+                </Box>
+            </Box>
         </Box>
         <Box sx={{ 
             display: 'flex',
-            flexDirection: 'row'
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            paddingLeft:'115px',
+            paddingRight:'115px'
         }}>
-            <Link href="#"><img src='thehackernews.png' alt='The Hacker News Logo' /></Link>
+            <Link href="#"><img src='thehackernews.png' alt='The Hacker News Logo' height={50} width={435}/></Link>
             <Button variant='contained' startIcon={<MailIcon />}
-                sx={{backgroundColor:'#fdd835', 
+                sx={{backgroundColor:'#ffdb4d', 
                     color:'black', 
                     padding:'10px', 
                     margin:'25px'
