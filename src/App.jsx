@@ -4,6 +4,7 @@ import { green, blueGrey } from "@mui/material/colors";
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 
+import Home from './pages/Home.jsx'
 import Appbar from './components/header/Appbar.jsx'
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
@@ -55,6 +56,7 @@ export default function App() {
         <Header />
         <Appbar />
         <Body />
+        <Home />
         <Footer />
       </Container>
       </ThemeProvider>
