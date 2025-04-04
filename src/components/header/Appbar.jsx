@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -8,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import { Button } from '@mui/material';
 import './Appbar.css'
 
 const Search = styled('div')(({ theme }) => ({
@@ -56,69 +58,26 @@ export default function SearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: '#fff', color: '#555555',
-            paddingLeft:'115px',
-            paddingRight:'115px',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
             }}>
         <Toolbar>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize:'15px' }}
+          <Button
+            component={Link} to="/"
           >
             Home
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize:'15px' }}
-          >
-            Data Breaches
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize:'15px' }}
-          >
-            Cyber Attacks
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize:'15px' }}
-          >
-            Vulnerabilities
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize:'15px' }}
+          </Button>
+          <Button
+            component={Link} to="/webnar"
           >
             Webnars
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize:'15px' }}
-          >
-            Expert Insights
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize:'15px' }}
+          </Button>
+          <Button
+            component={Link} to="/contact"
           >
             Contact
-          </Typography>
+          </Button>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />

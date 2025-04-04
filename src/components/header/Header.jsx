@@ -38,7 +38,7 @@ export default function Header() {
             paddingLeft:'115px',
             paddingRight:'115px'
         }}>
-            <Link href="#"><img src='thehackernews.png' alt='The Hacker News Logo' height={50} width={435}/></Link>
+            <Link href="/"><img src='thehackernews.png' alt='The Hacker News Logo' height={50} width={435}/></Link>
             <Button variant='contained' startIcon={<MailIcon />}
                 sx={{backgroundColor:'#ffdb4d', 
                     color:'black', 
