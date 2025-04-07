@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { green, blueGrey } from "@mui/material/colors";
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 
@@ -10,7 +9,6 @@ import Contact from './pages/Contact.jsx';
 import Webnar from './pages/Webnar.jsx';
 import Appbar from './components/header/Appbar.jsx';
 import Header from './components/header/Header.jsx';
-import NavBar from './components/header/NavBar.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Body from './components/body/Body.jsx';
 

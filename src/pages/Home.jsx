@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchNews } from "../services/Service.jsx";
 import CardNews from "../components/CardNews";
+import PaginatedCards from "../components/PaginatedCards.JSX";
 import { Container, Grid, Typography } from "@mui/material";
 
 const Home = () => {
